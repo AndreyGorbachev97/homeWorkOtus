@@ -1,3 +1,5 @@
+"use strict";
+
 // сумма двух чисел
 const sum = (a, b) => console.log(a + b);
 sum(2, 3)
