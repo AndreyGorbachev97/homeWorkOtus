@@ -1,0 +1,19 @@
+{
+  "name": "homeworkotus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyGorbachev97/homeWorkOtus1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreyGorbachev97/homeWorkOtus1/issues"
+  },
+  "homepage": "https://github.com/AndreyGorbachev97/homeWorkOtus1#readme"
+}
