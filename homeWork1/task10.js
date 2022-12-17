@@ -6,4 +6,4 @@ const task10 = () => {
   console.log("Дата?", regData.test(str));
   console.log("Почта?", regEmail.test(str));
   console.log("Телефон?", regPhone.test(str));
-}
+} 
