@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "build": "babel src -d build",
+    "test": "jest --coverage",
     "lint": "eslint .",
     "lint:fix": "prettier -- write . && eslint . --fix",
     "prepare": "husky install"
@@ -38,5 +39,8 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.19.3"
   }
 }
