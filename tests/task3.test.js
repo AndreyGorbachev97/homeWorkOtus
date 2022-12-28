@@ -17,3 +17,11 @@ describe("sum of integers 50 - 100", () => {
     expect(sumOfIntegers()).toEqual(3725)
   })
 })
+
+describe("multiplication table for 7", () => {
+  it("show table", () => {
+    jest.spyOn(console, "log");
+    multiplicationTable()
+    expect(console.log).toHaveBeenCalledWith("таблица умножения на 7: ", `7 * 1 = ", 7`);
+  })
+})
