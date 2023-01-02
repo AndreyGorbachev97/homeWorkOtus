@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src -d build",
     "test": "jest --coverage",
-    "lint": "TZ=UTC eslint .",
+    "lint": "eslint .",
     "lint:fix": "prettier -- write . && eslint . --fix",
     "prepare": "husky install"
   },

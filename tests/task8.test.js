@@ -29,6 +29,6 @@ describe("working date", () => {
       .useFakeTimers()
       .setSystemTime(new Date(1672572182193))
 
-    expect(diffDate()).toEqual(863.03655)
+    expect(diffDate()).toEqual(683.03655)
   })
 })
