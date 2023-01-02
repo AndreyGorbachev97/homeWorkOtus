@@ -16,7 +16,10 @@ export const diffDate = () => {
   const day = currentDate.getDate()
   const month = currentDate.getMonth()
   const year = currentDate.getFullYear()
-  const startDay = new Date(`${year}-${month}-${day}`);
+  console.log("day", day)
+  console.log("month", month)
+  console.log("year", year)
+  const startDay = new Date(`${year}-${month + 1}-${day}`);
   console.log("startDay", startDay)
   const diff = currentDate - startDay
   return diff / 1000 / 60

@@ -25,12 +25,10 @@ describe("working date", () => {
     expect(dayOfWeek(5)).toEqual("Пятница")
   })
   it("diff date", () => {
-    const mockDate = new Date(1672572182193)
-    const spy = jest
-    .spyOn(global, 'Date')
-    .mockImplementation(() => mockDate)
-    // 1672572182193
-    // jest.spyOn(Date, "now").mockImplementation(() => 1660850523095);
-    expect(diffDate()).toEqual(1440)
+    jest
+      .useFakeTimers()
+      .setSystemTime(new Date(1672572182193))
+
+    expect(diffDate()).toEqual(863.03655)
   })
 })
