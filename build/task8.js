@@ -16,10 +16,24 @@ const dayOfWeek = day => {
   return days[day];
 };
 exports.dayOfWeek = dayOfWeek;
-const diffDate = (inputDate, currentDate) => {
-  const diff = currentDate - inputDate;
+const diffDate = () => {
+  const currentDate = new Date();
+  const day = currentDate.getDate();
+  const month = currentDate.getMonth();
+  const year = currentDate.getFullYear();
+  console.log("day", day);
+  console.log("month", month);
+  console.log("year", year);
+  const startDay = new Date(`${year}-${month + 1}-${day}`);
+  console.log("startDay", startDay);
+  const diff = currentDate - startDay;
   return diff / 1000 / 60;
 };
+
+// export const diffDate = (inputDate, currentDate) => {
+//   const diff = currentDate - inputDate
+//   return diff / 1000 / 60
+// };
 exports.diffDate = diffDate;
 const task8 = () => {
   const input = prompt('Введите дату в формате ДД.ММ.ГГГГ: ');
