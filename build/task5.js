@@ -14,6 +14,7 @@ const maxMinArr = arr => {
   for (let i = 1; i < arr.length; i += 1) {
     if (arr[i] < min) {
       min = arr[i];
+      continue;
     }
     if (arr[i] > max) {
       max = arr[i];
