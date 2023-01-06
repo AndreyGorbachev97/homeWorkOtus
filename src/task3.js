@@ -7,7 +7,6 @@ export const sumOfIntegers = () => {
   return sum
 };
 
-// Вывести в консоль таблицу умножения на 7. Не знаю как это можно протестировать.
 export const multiplicationTable = () => {
   let table = `таблица умножения на 7:`
   for (let i = 1; i < 9; i += 1) {
