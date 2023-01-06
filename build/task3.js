@@ -16,10 +16,11 @@ const sumOfIntegers = () => {
 // Вывести в консоль таблицу умножения на 7. Не знаю как это можно протестировать.
 exports.sumOfIntegers = sumOfIntegers;
 const multiplicationTable = () => {
-  console.log('таблица умножения на 7: ');
+  let table = `таблица умножения на 7:`;
   for (let i = 1; i < 9; i += 1) {
-    console.log(`7 * ${i} = `, i * 7);
+    table += `\n7 * ${i} = ${i * 7}`;
   }
+  console.log(table);
 };
 
 // Запросить у пользователя ввод числа N. Вывести в консоль среднее арифметическое всех нечётных чисел от 1 до N
