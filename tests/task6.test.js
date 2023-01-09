@@ -17,10 +17,10 @@ describe("difference between numbers", () => {
 
 describe("is word", () => {
   it("word: test", () => {
-    expect(isWord("test")).toEqual(false);
+    expect(isWord(" test dfgd ghhf ")).toEqual(false);
   })
   it("word: qw", () => {
-    expect(isWord("qw")).toEqual(false);
+    expect(isWord("   qw ")).toEqual(true);
   })
   it("word: ", () => {
     expect(isWord("")).toEqual(false);
